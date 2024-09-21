@@ -1,0 +1,41 @@
+/* Container Styles */
+.error-container {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Error Title */
+  .error-title {
+    font-size: 120px;
+    color: #004080; /* Dark blue for the 404 */
+    margin: 0;
+  }
+  
+  /* Error Message */
+  .error-message {
+    font-size: 20px;
+    color: #606060; /* Gray color for the message */
+    margin-bottom: 30px;
+  }
+  
+  /* Back Home Button */
+  .btn-primary {
+    padding: 12px 30px;
+    background-color: #0080ff; /* Primary blue color for the button */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004080; /* Darker blue on hover */
+  }
+  

@@ -1,0 +1,133 @@
+
+.header {
+    background-color: #f0f8ff; 
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  .navbar {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-item {
+    position: relative;
+  }
+  
+  .navbar-link {
+    font-size: 16px;
+    color: #004080; 
+    text-decoration: none;
+    padding: 8px 12px;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-link:hover, 
+  .navbar-link.active {
+    color: #0080ff;
+  }
+  
+  .navbar-link.has-after::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #0080ff; 
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  
+  .navbar-link.has-after:hover::after,
+  .navbar-link.active::after {
+    width: 100%;
+    left: 0;
+  }
+  
+
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #3eca2e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #004080; 
+  }
+  
+  .nav-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f0f8ff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar.active {
+      display: flex;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .navbar-link {
+      padding: 10px 0;
+    }
+  
+    .nav-toggle-btn {
+      display: inline-block;
+    }
+  
+    .btn-primary {
+      display: none;
+    }
+  }
+  

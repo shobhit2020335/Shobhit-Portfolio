@@ -1,0 +1,27 @@
+<header class="header" data-header>
+    <div class="container">
+      <!-- <a routerLink="/home" class="logo">
+        <img src="assets/images/logo2.png" width="151" height="28" alt="Shobhit Verma">
+      </a> -->
+      <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a routerLink="/home" class="label-lg navbar-link has-after" routerLinkActive="active">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/service"  class="label-lg navbar-link has-after" routerLinkActive="active">Services</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/projects"  class="label-lg navbar-link has-after" routerLinkActive="active">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <a routerLink="/contact" class="btn btn-primary">Contact Now</a>
+      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+        <a name="menu-outline" aria-hidden="true"></a>
+      </button>
+    </div>
+  </header>

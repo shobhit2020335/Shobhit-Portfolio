@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  
+}
+
+.contact-section {
+  background-color: #adbbda;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+.title{
+  font-size:40px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000000;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.myself-banner {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.myself-banner img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list {
+  flex: 1;
+  list-style-type: none;
+  padding: 40px;
+  background-color: #f0f8ff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.item-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.label-lg {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.body-lg {
+  font-size: 1.1em;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.body-lg:hover {
+  color: #000;
+}
+
+address {
+  font-style: normal;
+}
+
+@media (max-width: 968px) {
+  .contact-content {
+      flex-direction: column;
+  }
+
+  .myself-banner, .contact-list {
+      width: 100%;
+  }
+
+  .myself-banner {
+      margin-bottom: 30px;
+  }
+
+  .contact-list {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .item-icon {
+      margin-right: 0;
+      margin-bottom: 15px;
+  }
+}
